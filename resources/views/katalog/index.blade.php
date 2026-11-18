@@ -27,13 +27,13 @@
                 RUANG KERJA
             </div>
             <nav class="space-y-1 text-sm">
-                <a href="{{ route('katalog.index') }}" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
+                <a href="{{ route('katalog.index') }}" class="block px-3 py-2.5 bg-[#d6d6d6] font-semibold text-gray-900 rounded">
                     Katalog produk
                 </a>
                 <a href="#" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
                     Rak &amp; lorong
                 </a>
-                <a href="{{ route('katalog.index') }}" class="block px-3 py-2.5 bg-[#d6d6d6] font-semibold text-gray-900 rounded">
+                <a href="{{ route('katalog.pencarian') }}" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
                     Pencarian produk
                 </a>
                 <a href="#" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">

@@ -15,3 +15,7 @@ Route::get('/katalog/{id}',
     [KatalogController::class, 'show']
 )->whereNumber('id')
  ->name('katalog.show');
+
+Route::get('/katalog/pencarian', 
+    [KatalogController::class, 'pencarian']
+)->name('katalog.pencarian');

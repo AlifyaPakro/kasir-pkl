@@ -31,4 +31,26 @@ class KatalogController extends Controller
 
         return view('katalog.index', compact('produk', 'q', 'kategoriPilihan'));
     }
+
+    public function pencarian(Request $request)
+    {
+        $keyword = $request->input('q', '');
+        $kategori = $request->input('kategori', '');
+
+        // Ambil data produk berdasarkan pencarian, serta eager loading relasi 'rak'
+        $query = Produk::with('rak');
+
+        if (!empty($keyword)) {
+            $query->where('nama', 'like', '%' . $keyword . '%');
+        }
+
+        if (!empty($kategori)) {
+            $query->where('kategori', $kategori);
+        }
+
+        // Ambil produk pertama yang cocok untuk ditampilkan di card detail sebelah kanan
+        $produkDipilih = $query->first();
+
+        return view('katalog.pencarian', compact('produkDipilih', 'keyword', 'kategori'));
+    }
 }
