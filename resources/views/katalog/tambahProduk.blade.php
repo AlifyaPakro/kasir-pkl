@@ -62,19 +62,7 @@
     </header>
 
     <div class="layout">
-                <aside style="width: 256px; background: #f9fafb; border-right: 1px solid #e5e7eb; padding: 24px; flex-shrink: 0;">
-            <p style="font-size: 12px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">Ruang Kerja</p>
-            <nav style="display: flex; flex-direction: column; gap: 4px;">
-                <a href="{{ route('katalog.index') }}" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Katalog produk</a>
-                <a href="{{ route('katalog.pencarian') }}" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Pencarian produk</a>
-                <a href="{{ route('katalog.tambah') }}" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; background: #e5e7eb; font-weight: 600; color: #111827; text-decoration: none;">Tambah produk</a>
-                <a href="{{ route('katalog.update') }}" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Update produk</a>
-                <a href="{{ route('katalog.nonaktif') }}" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Nonaktifkan produk</a>
-                <a href="{{ route('katalog.index') }}" onclick="alert('Halaman Rak & Lorong belum tersedia di route.'); return false;" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Rak & lorong</a>
-                <a href="{{ route('katalog.index') }}" onclick="alert('Halaman Validasi Stok belum tersedia di route.'); return false;" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Validasi stok</a>
-                <a href="{{ route('katalog.index') }}" onclick="alert('Halaman Kontrol Rilis PM belum tersedia di route.'); return false;" style="display: block; padding: 9px 12px; border-radius: 6px; font-size: 14px; color: #4b5563; text-decoration: none;">Kontrol rilis PM</a>
-            </nav>
-        </aside>
+                @include('components.navbar')
 
 
         <main>

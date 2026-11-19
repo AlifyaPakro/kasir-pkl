@@ -64,18 +64,7 @@
     </header>
 
     <div class="layout">
-        <aside>
-            <p>Ruang Kerja</p>
-            <nav>
-                <a href="{{ route('katalog.index') }}">Katalog produk</a>
-                <a href="{{ route('katalog.pencarian') }}">Pencarian produk</a>
-                <a href="{{ route('katalog.tambah') }}">Tambah produk</a>
-                <a href="{{ route('katalog.update') }}" class="active">Update produk</a>
-                <a href="{{ route('katalog.nonaktif') }}">Nonaktifkan produk</a>
-                <a href="{{ route('katalog.index') }}" onclick="alert('Halaman Rak & Lorong belum tersedia di route.'); return false;">Rak & lorong</a>
-                <a href="{{ route('katalog.index') }}" onclick="alert('Halaman Validasi Stok belum tersedia di route.'); return false;">Validasi stok</a>
-            </nav>
-        </aside>
+        @include('components.navbar')
 
         <main>
             <div>

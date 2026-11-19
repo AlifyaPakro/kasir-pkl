@@ -22,18 +22,7 @@
     <div class="flex min-h-screen">
         
         <!-- Sidebar Kiri -->
-        <aside class="w-64 bg-gray-50 border-r border-gray-200 p-6 space-y-6">
-            <div>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Ruang Kerja</p>
-                <nav class="space-y-1 text-sm">
-                    <a href="{{ route('katalog.index') }}" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-200">Katalog produk</a>
-                    <a href="#" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-200">Rak & lorong</a>
-                    <a href="{{ route('katalog.pencarian') }}" class="block px-3 py-2 rounded-md bg-gray-200 font-semibold text-gray-900">Pencarian produk</a>
-                    <a href="#" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-200">Validasi stok</a>
-                    <a href="#" class="block px-3 py-2 rounded-md text-gray-600 hover:bg-gray-200">Kontrol rilis PM</a>
-                </nav>
-            </div>
-        </aside>
+        @include('components.navbar')
 
         <!-- Konten Utama -->
         <main class="flex-1 p-8 space-y-6">
