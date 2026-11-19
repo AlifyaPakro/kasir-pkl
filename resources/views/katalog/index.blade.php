@@ -36,6 +36,17 @@
                 <a href="{{ route('katalog.pencarian') }}" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
                     Pencarian produk
                 </a>
+                <a href="{{ route('katalog.tambah') }}" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
+                 Tambah produk
+                </a>
+                <a href="{{ route('katalog.update') }}" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
+                 Update produk
+                </a>
+
+                <a href="{{ route('katalog.nonaktif') }}" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
+                  Nonaktifkan produk
+                </a>
+
                 <a href="#" class="block px-3 py-2.5 text-gray-700 hover:bg-gray-200/70 rounded transition">
                     Validasi stok
                 </a>
